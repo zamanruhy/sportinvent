@@ -1,0 +1,145 @@
+.nav {
+  /* position: relative; */
+
+  @screen max-lg {
+    display: none;
+  }
+
+  > ul {
+    display: flex;
+
+    > li {
+      > a {
+        display: inline-block;
+        color: #000000;
+        padding: 0 18px;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 13px;
+        height: 50px;
+        line-height: 50px;
+        transition: all 200ms ease-out;
+
+        &:hover {
+          color: #f05a23;
+        }
+
+        &::after {
+          content: "";
+          width: 1px;
+          height: 14px;
+          background: #ccc;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin-top: -7px;
+        }
+      }
+      &.active > a {
+        color: #f05a23;
+      }
+      &:first-of-type > a {
+        padding-left: 0;
+      }
+      &:last-of-type > a {
+        padding-right: 0;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__sub {
+  }
+  &__sub-backdrop {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: #000000;
+    transition: opacity 120ms ease-out, visibility 120ms;
+    pointer-events: none;
+
+    /* opacity: 0.4;
+    visibility: visible; */
+  }
+  li:hover &__sub-backdrop {
+    opacity: 0.4;
+    visibility: visible;
+  }
+  &__sub-dialog {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 5px 0 0 0;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    text-align: left;
+    white-space: normal;
+    transform: scaleX(0.9) scaleY(0.8);
+    transform-origin: 30% 0%;
+    transition: opacity 150ms ease-out, transform 120ms ease-out,
+      visibility 150ms;
+
+    /* opacity: 1;
+    visibility: visible;
+    transform: none; */
+  }
+  li:hover &__sub-dialog {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  &__sub-content {
+    position: relative;
+    padding: 30px 40px;
+    background: #ffffff;
+    min-height: 250px;
+
+    display: flex;
+    gap: 40px;
+
+    ul {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 24px;
+      row-gap: 14px;
+
+      li {
+        a {
+          display: block;
+          color: #000;
+          font-weight: 600;
+          /* margin-bottom: 12px; */
+          line-height: 1.3;
+          padding: 1px 0;
+          width: fit-content;
+
+          &:hover {
+            color: #f05a23;
+          }
+        }
+      }
+    }
+  }
+  &__sub-pic {
+    width: 304px;
+    height: 189px;
+    flex-shrink: 0;
+    background-color: #f0f0f0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.intro {
+  position: relative;
+  margin-bottom: 60px;
+
+  @screen max-lg {
+    margin-bottom: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+    text-align: center;
+    background-color: #ffffff !important;
+    color: #f05a23;
+    margin-top: -22px;
+    opacity: 0;
+
+    @screen max-lg {
+      display: none;
+    }
+
+    svg {
+      height: 22px;
+      fill: currentColor;
+    }
+
+    &_prev {
+      left: 30px;
+      transform: translateX(-15px);
+    }
+    &_next {
+      right: 30px;
+      transform: translateX(15px);
+    }
+  }
+
+  &:hover &__nav {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fader {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 191 / 58;
+}
+
+.fader__slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.fader img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
