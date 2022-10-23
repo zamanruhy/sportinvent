@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Site title</title>
+    <meta name="description" content="Site description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Site title" />
+    <meta property="og:description" content="Site description" />
+    <meta property="og:image" content="http://via.placeholder.com/1200x630.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js" defer></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&amp;family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="js/app.js"></script>
+    <link rel="modulepreload" crossorigin href="js/vendor.js" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <nav class="nav">
+                <ul>
+                  <li>
+                    <a href="katalog/">Каталог</a>
+                    <div class="nav__sub">
+                      <div class="nav__sub-backdrop"></div>
+                      <div class="nav__sub-dialog">
+                        <div class="nav__sub-content">
+                          <ul>
+                            <li class="first">
+                              <a
+                                href="trenazheryi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/cat1.png"
+                                >Тренажеры</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="ganteli-shtangi-giri/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu2.png"
+                                >Гантели, штанги, гири</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="velosipedyi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu16.png"
+                                >Велосипеды</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="vse-dlya-futbola/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu4.png"
+                                >Все для футбола</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="konki/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu10.png"
+                                >Коньки</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="motocziklyi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu17.png"
+                                >Мотоциклы</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="fitnes-aksessuaryi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu13.png"
+                                >Фитнес аксессуары</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="tennis/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu3.png"
+                                >Теннис</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="sportivnyij-inventar/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu7.png"
+                                >Спортивный инвентарь</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="plavanie/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu12.png"
+                                >Плавание</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="stojki-stellazhi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu8.png"
+                                >Стойки, стеллажи</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="lyizhnyij-sport/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu9.png"
+                                >Лыжный спорт</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="sanki-snegokatyi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu11.png"
+                                >Санки, снегокаты</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="edinoborstva/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/cat22.png"
+                                >Единоборства</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="badminton/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu14.png"
+                                >Бадминтон</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="skejtbordyi-samokatyi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu15.png"
+                                >Скейтборды, самокаты</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="skuteryi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu18.png"
+                                >Скутеры, мопеды</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="vse-dlya-basketbola/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu5.png"
+                                >Все для баскетбола</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="snegoxodyi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu19.png"
+                                >Снегоходы</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="vse-dlya-volejbola/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu6.png"
+                                >Все для волейбола</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="kvadrocziklyi/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/megamenu20.png"
+                                >Квадроциклы</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                href="vsyo-dlya-xokkeya/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/cat21.png"
+                                >Всё для хоккея</a
+                              >
+                            </li>
+                            <li class="last">
+                              <a
+                                href="snoubording/"
+                                data-imgsrc="https://shop2full.demoultron.ru/images/categories/cat23.png"
+                                >Сноубординг</a
+                              >
+                            </li>
+                          </ul>
+                          <div class="nav__sub-pic">
+                            <img
+                              src="https://shop2full.demoultron.ru/images/categories/cat1.png"
+                              alt="#"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="akczii/">Акции</a></li>
+                  <li><a href="novosti/">Новости</a></li>
+                  <li><a href="dostavka-i-oplata">Доставка и оплата</a></li>
+                  <li><a href="o-kompanii">О компании</a></li>
+                  <li><a href="otzyivyi">Отзывы</a></li>
+                  <li><a href="kontaktyi">Контакты</a></li>
+                </ul>
+              </nav>
+              <button
+                data-hk="0-0-0-0-0-1-0-0"
+                class="button header__callback button_primary button_sm"
+              >
+                Обратный звонок</button
+              ><button class="header__callback-mobile">
+                <svg aria-hidden="true" viewBox="0 0 512 512">
+                  <path
+                    fill="currentColor"
+                    d="M487.8 24.1 387 .8a31.33 31.33 0 0 0-35.8 18.1l-46.5 108.5a31.36 31.36 0 0 0 8.9 36.5l53.9 44.1a350 350 0 0 1-159.6 159.6l-44.1-53.9a31.36 31.36 0 0 0-36.5-8.9L18.9 351.3C5 357.3-2.6 372.3.8 387L24 487.7A31.23 31.23 0 0 0 54.5 512C306.7 512 512 307.8 512 54.5c0-14.6-10-27.2-24.2-30.4zM55.1 480l-23-99.6 107.4-46 59.5 72.8c103.6-48.6 159.7-104.9 208.1-208.1l-72.8-59.5 46-107.4 99.6 23C479.7 289.7 289.6 479.7 55.1 480z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <div class="header__addr">
+                <a class="header__phone" href="tel:+71234567890">+7 (123) 456-78-90</a
+                ><a class="header__email" href="mailto:info@sitename.ru">info@sitename.ru</a>
+              </div>
+              <a class="header__logo" href="/"
+                ><img src="https://shop2full.demoultron.ru/images/site/logo.png" alt="#"
+              /></a>
+              <div class="header__widget">
+                <ul>
+                  <li>
+                    <button class="header__search-button lg:-mb-1">
+                      <svg viewBox="0 0 21 21" class="w-[20px] lg:w-[25px]">
+                        <path
+                          d="M20.71 20.7a1 1 0 0 1-1.42 0l-4.68-4.67a9.07 9.07 0 1 1 1.42-1.42l4.68 4.67a1 1 0 0 1 0 1.43ZM9 2a7 7 0 1 0 7 7 7 7 0 0 0-7-7Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="order-first lg:order-none">
+                    <a href="#"
+                      ><svg viewBox="0 0 28 32" class="w-[23px] lg:w-[28px]">
+                        <path
+                          class="bag_svg__svg-cart-icon"
+                          d="M26 8.91A1 1 0 0 0 25 8h-5V6A6 6 0 1 0 8 6v2H3a1 1 0 0 0-1 .91l-2 22A1 1 0 0 0 1 32h26a1 1 0 0 0 1-1.09ZM10 6a4 4 0 0 1 8 0v2h-8V6ZM2.1 30l1.81-20H8v2.28a2 2 0 1 0 2 0V10h8v2.28a2 2 0 1 0 2 0V10h4.09l1.81 20H2.1Z"
+                        ></path></svg
+                      ><span class="header__widget-badge">0</span></a
+                    >
+                  </li>
+                  <li class="lg:hidden">
+                    <button class="hamburger">
+                      <span class="hamburger__bar"><span class="hamburger__line"></span></span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="header__widget-label">
+                  <div class="header__widget-title">Корзина</div>
+                  <div class="header__widget-sum">12 680 ₽</div>
+                </div>
+              </div>
+              <form class="search" method="get" action="#">
+                <div class="search__field">
+                  <input
+                    type="text"
+                    placeholder="Поиск"
+                    class="search__input"
+                    name="query"
+                    autocomplete="off"
+                  />
+                  <div class="search__controls">
+                    <button type="submit" class="search__submit">
+                      <svg viewBox="0 0 21 21" class="h-[23px]">
+                        <path
+                          d="M20.71 20.7a1 1 0 0 1-1.42 0l-4.68-4.67a9.07 9.07 0 1 1 1.42-1.42l4.68 4.67a1 1 0 0 1 0 1.43ZM9 2a7 7 0 1 0 7 7 7 7 0 0 0-7-7Z"
+                        ></path>
+                      </svg></button
+                    ><span class="search__separator"></span
+                    ><button type="button" class="search__close">
+                      <svg viewBox="0 0 371.23 371.23" class="h-[20px]">
+                        <path
+                          d="M371.23 21.21 350.02 0l-164.4 164.4L21.22 0 0 21.21l164.4 164.4L0 350.01l21.21 21.22 164.4-164.4 164.4 164.4 21.22-21.21-164.4-164.4z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="app__main">
+        <div class="intro">
+          <div id="my-keen-slider" class="intro__slider fader">
+            <a href="#" class="fader__slide keen-slider__slide"
+              ><img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/slider/banner-1_1910x580_2a0.jpg"
+                alt="#" /></a
+            ><a href="#" class="fader__slide keen-slider__slide"
+              ><img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/slider/banner-2_1910x580_2a0.jpg"
+                alt="#" /></a
+            ><a href="#" class="fader__slide keen-slider__slide"
+              ><img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/slider/banner-3_1910x580_2a0.jpg"
+                alt="#" /></a
+            ><a href="#" class="fader__slide keen-slider__slide"
+              ><img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/slider/banner-4_1910x580_2a0.jpg"
+                alt="#"
+            /></a>
+          </div>
+          <button type="button" class="intro__nav intro__nav_prev">
+            <svg viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+            </svg></button
+          ><button type="button" class="intro__nav intro__nav_next">
+            <svg viewBox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="container">
+          <div class="features">
+            <div class="features__item">
+              <svg viewBox="0 0 512 512" class="features__item-icon">
+                <path
+                  d="M119.47 337.07a51.25 51.25 0 0 0-51.2 51.2c0 28.23 22.96 51.2 51.2 51.2s51.2-22.97 51.2-51.2a51.25 51.25 0 0 0-51.2-51.2zm0 85.33a34.17 34.17 0 0 1-34.14-34.13c0-18.83 15.31-34.14 34.14-34.14s34.13 15.31 34.13 34.14a34.17 34.17 0 0 1-34.13 34.13zm290.13-85.33a51.25 51.25 0 0 0-51.2 51.2 51.25 51.25 0 0 0 51.2 51.2 51.25 51.25 0 0 0 51.2-51.2 51.25 51.25 0 0 0-51.2-51.2zm0 85.33a34.17 34.17 0 0 1-34.13-34.13 34.17 34.17 0 0 1 34.13-34.14 34.17 34.17 0 0 1 34.13 34.14 34.17 34.17 0 0 1-34.13 34.13z"
+                ></path>
+                <path
+                  d="m510.64 289.78-76.8-119.46a8.54 8.54 0 0 0-7.17-3.92H332.8a8.53 8.53 0 0 0-8.53 8.53v213.34a8.52 8.52 0 0 0 8.53 8.53h34.13v-17.07h-25.6V183.47h80.68l72.92 113.44v82.82h-42.66v17.07h51.2a8.52 8.52 0 0 0 8.53-8.53V294.4c0-1.63-.47-3.24-1.36-4.62z"
+                ></path>
+                <path
+                  d="M375.47 277.33V217.6h68.26v-17.07h-76.8a8.53 8.53 0 0 0-8.53 8.54v76.8a8.52 8.52 0 0 0 8.53 8.53h128v-17.07H375.47zM332.8 106.67H8.53A8.54 8.54 0 0 0 0 115.2v273.07a8.53 8.53 0 0 0 8.53 8.53H76.8v-17.07H17.07v-256h307.2v256H162.13v17.07H332.8a8.52 8.52 0 0 0 8.53-8.53V115.2a8.53 8.53 0 0 0-8.53-8.53z"
+                ></path>
+                <path
+                  d="M8.53 345.6h51.2v17.07H8.53zm170.67 0h145.07v17.07H179.2zm290.13 0h34.14v17.07h-34.14zM34.13 140.8H332.8v17.07H34.13zm76.8 238.93H128v17.07h-17.07zm290.14 0h17.06v17.07h-17.06zM34.13 72.53H153.6V89.6H34.13zM0 72.53h17.07V89.6H0z"
+                ></path>
+              </svg>
+              <div class="features__item-content">
+                <h2 class="features__item-title">Бесплатная доставка</h2>
+                <div class="features__item-text">по Новороссийску</div>
+              </div>
+            </div>
+            <div class="features__item">
+              <svg viewBox="0 0 512 512" class="features__item-icon">
+                <path
+                  d="M154.22 299.08c-2.16-.76-4.36-1.56-6.56-2.4V261.6a22.62 22.62 0 0 1 9.1 4.37 7.42 7.42 0 0 0 10.02-10.95c-.42-.4-7.51-6.78-19.12-8.52v-7.17a7.42 7.42 0 0 0-14.84 0v7.74c-1.1.24-2.21.52-3.36.87-10.6 3.2-18.54 12.28-20.7 23.7-1.95 10.42 1.38 20.46 8.72 26.21 3.88 3.05 8.72 5.84 15.34 8.8v44.48c-5.73-.43-9.7-1.82-16.2-6.08a7.42 7.42 0 1 0-8.12 12.42c9.48 6.2 15.96 8.05 24.32 8.52v8.02a7.42 7.42 0 0 0 14.84 0v-8.6c16.65-3.28 26.37-17 28.53-29.82 2.76-16.48-5.86-30.82-21.97-36.51zm-27.59-12.9c-2.96-2.32-4.21-6.84-3.28-11.8.83-4.43 3.76-9.76 9.47-11.92v27.67a44.56 44.56 0 0 1-6.19-3.95zm34.92 46.95c-1.14 6.8-5.87 14-13.89 16.86v-37.5l1.61.58c13.71 4.84 12.87 16.58 12.28 20.06z"
+                ></path>
+                <path
+                  d="M511.6 289.53A17.23 17.23 0 0 0 500.65 277l-21.24-7.8a7.42 7.42 0 0 0-5.12 13.92l21.24 7.8a2.4 2.4 0 0 1 1.56 1.8c.1.5.17 1.44-.67 2.28L306.88 484.55a2.4 2.4 0 0 1-2.28.67 2.4 2.4 0 0 1-1.8-1.56l-26.63-72.48a17.29 17.29 0 0 0-10.28-10.28l-72.48-26.64c-1.1-.4-1.45-1.3-1.56-1.79s-.17-1.44.67-2.28l189.55-189.55a2.4 2.4 0 0 1 2.28-.67c.5.11 1.39.46 1.8 1.56l26.63 72.48a17.28 17.28 0 0 0 10.28 10.28l18.43 6.77a7.42 7.42 0 1 0 5.12-13.92l-18.43-6.78a2.46 2.46 0 0 1-1.47-1.47l-26.64-72.47a17.24 17.24 0 0 0-12.53-10.94 17.24 17.24 0 0 0-15.96 4.67l-7.17 7.17v-73.6c0-9.55-7.77-17.31-17.32-17.31h-75.56a35.78 35.78 0 0 0-6.5-41.63 35.66 35.66 0 0 0-36.1-8.79 35.78 35.78 0 0 0-33.77-24.11 35.78 35.78 0 0 0-33.77 24.1 35.64 35.64 0 0 0-36.1 8.8 35.49 35.49 0 0 0-10.47 25.26 35.5 35.5 0 0 0 3.96 16.36h-6.22a7.42 7.42 0 0 0 0 14.84h52.87v70.22a138.96 138.96 0 0 0-24.97-2.27c-15.46 0-30.01 2.41-43.94 7.05H40.76v-72.52c0-1.37 1.1-2.48 2.47-2.48h33.83a7.42 7.42 0 0 0 0-14.84H43.23a17.33 17.33 0 0 0-17.31 17.32v124.71A139.69 139.69 0 0 0 0 309.66c0 30.17 9.46 58.94 27.36 83.2a7.4 7.4 0 1 0 11.94-8.8 124.49 124.49 0 0 1-24.46-74.4c0-69.27 56.35-125.63 125.62-125.63a125.14 125.14 0 0 1 121.92 95.32l-12.56 12.56a110.2 110.2 0 0 0-32.12-61.6 110.16 110.16 0 0 0-77.24-31.44c-61.09 0-110.78 49.7-110.78 110.78s49.7 110.79 110.78 110.79c25.21 0 49.63-8.63 69.25-24.38l15.9 5.85a125.87 125.87 0 0 1-85.15 33.37 125.8 125.8 0 0 1-79-28.02 7.42 7.42 0 1 0-9.34 11.53 140.68 140.68 0 0 0 88.34 31.33c37.82 0 74.2-15.45 100.6-42.54l19.71 7.25c.68.25 1.22.79 1.47 1.47l26.64 72.48a17.24 17.24 0 0 0 16.28 11.34c4.53 0 8.91-1.78 12.2-5.08L506.93 305.5a17.24 17.24 0 0 0 4.67-15.96zm-470.84-78.7v-19.75h24.48a141.44 141.44 0 0 0-24.48 19.74zm308.8-107.11v72.53H224.9v-75h122.2a2.48 2.48 0 0 1 2.47 2.47zm-95.01-48.45a20.91 20.91 0 0 1 0 29.54c-.33.33-.96.87-2.05 1.6h-36.15c10.77-20.26 13.56-30.17 14.28-35.15a20.84 20.84 0 0 1 23.92 4.01zm-59.39-28.55a20.91 20.91 0 0 1 20.89 20.88c0 2.15-1.22 11.24-16.6 38.8h-8.58c-15.37-27.56-16.6-36.65-16.6-38.8a20.91 20.91 0 0 1 20.9-20.88zm-59.38 58.1c-3.95-3.95-6.12-9.2-6.12-14.78s2.17-10.82 6.12-14.77a20.82 20.82 0 0 1 23.91-4c.72 4.97 3.51 14.88 14.28 35.14h-36.14a13.63 13.63 0 0 1-2.05-1.6zm44.48 16.42h29.8v75h-25.69l-.1.01a140.8 140.8 0 0 0-4-1.25zm47.99 98.84a139.39 139.39 0 0 0-12.6-9h133.92v1.08l-28.72 28.72H249.2a141.01 141.01 0 0 0-20.95-20.8zm31.55 35.64H306l-31.6 31.62a140.53 140.53 0 0 0-14.6-31.62zM140.46 405.6c-52.9 0-95.95-43.04-95.95-95.94s43.05-95.95 95.95-95.95c50.93 0 93.62 41.01 95.85 91.71l-54.28 54.28c-4.2 4.2-5.95 10.17-4.67 15.96s5.36 10.48 10.93 12.53l4.68 1.72a95.79 95.79 0 0 1-52.51 15.7z"
+                ></path>
+                <path
+                  d="M363.78 395.1a7.42 7.42 0 0 0 6.86-10.23l-42.71-104.5a7.42 7.42 0 1 0-13.74 5.61l42.72 104.5a7.42 7.42 0 0 0 6.87 4.62zm-88.2-83.8c-5.2 5.2-7.74 12.34-7.16 20.1a31.66 31.66 0 0 0 9.37 19.9 31.65 31.65 0 0 0 19.9 9.38c.73.05 1.46.08 2.17.08 6.92 0 13.22-2.53 17.93-7.24 5.2-5.2 7.74-12.34 7.16-20.1a31.66 31.66 0 0 0-9.37-19.9 31.65 31.65 0 0 0-19.9-9.37c-7.77-.59-14.9 1.96-20.1 7.15zm29.5 12.7a16.83 16.83 0 0 1 5.08 10.53c.25 3.39-.77 6.4-2.86 8.5-2.1 2.1-5.12 3.1-8.5 2.85a16.83 16.83 0 0 1-10.52-5.06 16.83 16.83 0 0 1-5.07-10.52c-.25-3.39.76-6.4 2.86-8.5a10.38 10.38 0 0 1 7.48-2.9c.34 0 .67.02 1.02.04 3.8.29 7.54 2.09 10.52 5.07zm86.83 45.37c6.92 0 13.22-2.53 17.93-7.24 10.42-10.42 9.43-28.37-2.2-40-11.65-11.65-29.6-12.64-40.01-2.22-10.42 10.42-9.43 28.37 2.2 40a31.65 31.65 0 0 0 19.92 9.37c.72.06 1.45.09 2.16.09zm-13.79-38.97a10.4 10.4 0 0 1 7.5-2.91c3.89 0 8.15 1.75 11.52 5.13 5.85 5.85 6.85 14.38 2.21 19.02-2.1 2.09-5.11 3.1-8.5 2.85a16.82 16.82 0 0 1-10.52-5.07c-5.85-5.85-6.84-14.38-2.21-19.02z"
+                ></path>
+              </svg>
+              <div class="features__item-content">
+                <h2 class="features__item-title">Клиентские программы</h2>
+                <div class="features__item-text">для постоянных клиентов</div>
+              </div>
+            </div>
+            <div class="features__item">
+              <svg viewBox="0 -27 512 512" class="features__item-icon">
+                <path
+                  d="M478 79.47h-20.02l.02-35.79A43.62 43.62 0 0 0 414.45.08L262.5 0h-.02a32.17 32.17 0 0 0-22.9 9.48L12.76 236.31C4.53 244.54 0 255.48 0 267.12s4.53 22.59 12.76 30.82l147.2 147.2a43.44 43.44 0 0 0 30.82 12.74 43.44 43.44 0 0 0 30.81-12.74l142.82-142.81a10 10 0 1 0-14.15-14.14L207.45 431a23.6 23.6 0 0 1-33.34 0L26.9 283.8c-4.46-4.46-6.91-10.38-6.91-16.68s2.45-12.21 6.9-16.67L253.74 23.63A12.3 12.3 0 0 1 262.5 20l151.94.09A23.6 23.6 0 0 1 438 43.68l-.05 83.8h-45.04c-3.88 0-7.39-1.6-9.93-4.15a36.9 36.9 0 0 0 11.52-59.92 36.9 36.9 0 0 0-52.14 0 36.9 36.9 0 0 0 0 52.13 36.66 36.66 0 0 0 18.79 10.05 34.05 34.05 0 0 0 31.76 21.88h45.03l-.03 47.94c0 3.3-1.29 6.41-3.62 8.75l-27.46 27.46a10 10 0 0 0 14.14 14.14l27.46-27.46a32.18 32.18 0 0 0 9.48-22.88l.03-47.95H478c18.75 0 34-15.25 34-34 0-18.74-15.25-34-34-34zm-121.5-1.92a16.8 16.8 0 0 1 11.93-4.93 16.82 16.82 0 0 1 14.53 8.34 34.14 34.14 0 0 0-22.75 23.22 16.88 16.88 0 0 1-3.7-26.63zM478 127.47h-20.05l.02-28H478c7.72 0 14 6.28 14 14s-6.28 14-14 14zm0 0"
+                ></path>
+                <path
+                  d="M161.41 252.3a10 10 0 0 0 12.32 6.96l102.65-28.58a10 10 0 0 0-5.36-19.26l-102.66 28.57a10 10 0 0 0-6.95 12.31zm45.19 13.2a29.29 29.29 0 0 0-8.64 20.85c0 7.88 3.07 15.28 8.64 20.85 5.75 5.75 13.3 8.62 20.85 8.62s15.1-2.87 20.85-8.62a29.52 29.52 0 0 0 0-41.7 29.52 29.52 0 0 0-41.7 0zm27.56 27.55a9.5 9.5 0 0 1-13.42-13.4 9.47 9.47 0 0 1 13.42 0 9.5 9.5 0 0 1 0 13.4zm19.09-87.09a29.52 29.52 0 0 0 0-41.7c-5.57-5.57-12.97-8.63-20.85-8.63s-15.28 3.06-20.85 8.63a29.52 29.52 0 0 0 0 41.7 29.4 29.4 0 0 0 20.85 8.62 29.4 29.4 0 0 0 20.85-8.62zM225.7 178.4a9.42 9.42 0 0 1 6.7-2.78 9.5 9.5 0 1 1-6.7 16.2 9.5 9.5 0 0 1 0-13.42zm0 0"
+                ></path>
+                <path
+                  d="M99.46 231.64a10 10 0 0 0-14.14 0L56.9 260.05a10 10 0 0 0 0 14.15L183.71 401a9.97 9.97 0 0 0 14.14 0l189.6-189.6a10 10 0 0 0 0-14.14l-126.8-126.8a10 10 0 0 0-14.15 0L141.89 175.07a10 10 0 0 0 14.14 14.14l97.54-97.54 112.66 112.67-175.45 175.45L78.12 267.13l21.34-21.35a10 10 0 0 0 0-14.14zm286.16 25.33c-2.63 0-5.21 1.07-7.07 2.93s-2.93 4.44-2.93 7.07 1.07 5.21 2.93 7.07 4.44 2.93 7.07 2.93 5.2-1.07 7.07-2.93c1.86-1.86 2.93-4.44 2.93-7.07s-1.07-5.2-2.93-7.07a10.09 10.09 0 0 0-7.07-2.93zm0 0"
+                ></path>
+                <path
+                  d="M127.74 217.5a10.01 10.01 0 0 0-7.07-17.08 10.1 10.1 0 0 0-7.07 2.93 10.06 10.06 0 0 0-2.93 7.07 10.04 10.04 0 0 0 10 10 10 10 0 0 0 7.07-2.93zm0 0"
+                ></path>
+              </svg>
+              <div class="features__item-content">
+                <h2 class="features__item-title">Скидки на черную пятницу</h2>
+                <div class="features__item-text">до 10%</div>
+              </div>
+            </div>
+            <div class="features__item">
+              <svg viewBox="0 -26 512 512" class="features__item-icon">
+                <path
+                  d="M256 100a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM90 280a10 10 0 1 0 0-20 10 10 0 0 0 0 20zm0 0"
+                ></path>
+                <path
+                  d="M336 0c-90.03 0-163.92 62.07-169.63 140.25C80.63 144.55 0 206.38 0 290c0 34.95 13.83 68.8 39 95.63a60.82 60.82 0 0 1-16.07 57.3A10 10 0 0 0 30 460c28.52 0 56-11.18 76.43-30.9 19.89 6.8 45.85 10.9 69.57 10.9 90.02 0 163.9-62.05 169.63-140.22 20.94-.93 42.71-4.8 59.94-10.67A110.3 110.3 0 0 0 482 320a10 10 0 0 0 7.07-17.07 60.82 60.82 0 0 1-16.07-57.3c25.17-26.83 39-60.68 39-95.63C512 63.11 425.16 0 336 0zM176 420c-23.6 0-50.5-4.63-68.51-11.8a10 10 0 0 0-11.08 2.54 90.23 90.23 0 0 1-44.88 26.63 80.87 80.87 0 0 0 6.1-59.52 9.98 9.98 0 0 0-2.45-4.23C32.5 350.26 20 320.56 20 290c0-70.47 71.44-130 156-130 79.85 0 150 55.53 150 130 0 71.68-67.29 130-150 130zm280.82-186.38c-1.16 1.2-2 2.65-2.45 4.23a80.87 80.87 0 0 0 6.1 59.52 90.2 90.2 0 0 1-44.88-26.63 10 10 0 0 0-11.08-2.54c-15.61 6.21-37.89 10.51-58.91 11.55-2.92-37.82-21.79-73.36-54.04-99.75H422a10 10 0 1 0 0-20H260.84c-22.7-11.55-48.19-18.3-74.42-19.7C192.16 73.12 257.06 20 336 20c84.56 0 156 59.53 156 130 0 30.56-12.5 60.26-35.18 83.63zm0 0"
+                ></path>
+                <path
+                  d="M256 260H130a10 10 0 1 0 0 20h126a10 10 0 1 0 0-20zm0 60H90a10 10 0 1 0 0 20h166a10 10 0 1 0 0-20zm166-220H296a10 10 0 1 0 0 20h126a10 10 0 1 0 0-20zm0 0"
+                ></path>
+              </svg>
+              <div class="features__item-content">
+                <h2 class="features__item-title">Онлайн поддержка</h2>
+                <div class="features__item-text">Время работы : с 8:00 - 23:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="categories">
+            <h2 class="categories__title title">Категории магазина</h2>
+            <div class="categories__grid">
+              <a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat1_310x270_e26.png"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Тренажеры</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat4_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Все для футбола</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat17_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Мотоциклы</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat13_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Теннис</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat3_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Фитнес аксессуары</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat9_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Лыжный спорт</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat12_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Плавание</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat16_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Велосипеды</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat2_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Гантели, штанги, гири</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat10_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Коньки</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat8_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Стойки, стеллажи</h3></a
+              ><a href="#" class="categories__item"
+                ><img
+                  class="categories__item-img"
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/categories/cat18_310x270_b5b.jpg"
+                  alt="#"
+                />
+                <h3 class="categories__item-title">Скутеры, мопеды</h3></a
+              >
+            </div>
+          </div>
+          <div class="banners">
+            <div class="banners__grid">
+              <a href="#" class="banners__item"
+                ><img
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/actions/a1_610x240_1af.jpg"
+                  alt="#"
+                  class="banners__item-img" /></a
+              ><a href="#" class="banners__item"
+                ><img
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/actions/a2_610x240_1af.jpg"
+                  alt="#"
+                  class="banners__item-img" /></a
+              ><a href="#" class="banners__item"
+                ><img
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/actions/a3_610x240_1af.jpg"
+                  alt="#"
+                  class="banners__item-img" /></a
+              ><a href="#" class="banners__item"
+                ><img
+                  src="https://shop2full.demoultron.ru/assets/cache_image/images/actions/a4_610x240_1af.jpg"
+                  alt="#"
+                  class="banners__item-img"
+              /></a>
+            </div>
+          </div>
+          <div class="brands">
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b3_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b8_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b1_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b7_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b9_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b5_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b6_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b12_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b2_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b11_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b10_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+            <div class="brands__item">
+              <img
+                src="https://shop2full.demoultron.ru/assets/cache_image/images/brands/b4_190x0_bbc.png"
+                alt="#"
+                class="brands__img"
+              />
+            </div>
+          </div>
+          <div class="content">
+            <h1>Шаблон интернет магазина спортинвентаря на modx</h1>
+            <p>
+              Таким образом сложившаяся структура организации обеспечивает широкому кругу
+              (специалистов) участие в формировании форм развития. Идейные соображения высшего
+              порядка, а также постоянное информационно-пропагандистское обеспечение нашей
+              деятельности требуют определения и уточнения существенных финансовых и
+              административных условий.
+            </p>
+            <p>
+              Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение
+              нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в
+              отношении поставленных задач. Не следует, однако забывать, что консультация с широким
+              активом обеспечивает широкому кругу (специалистов) участие в формировании форм
+              развития.
+            </p>
+            <p>
+              Равным образом начало повседневной работы по формированию позиции обеспечивает
+              широкому кругу (специалистов) участие в формировании системы обучения кадров,
+              соответствует насущным потребностям.
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__cols">
+              <div class="footer__col">
+                <h3>КОМПАНИЯ</h3>
+                <ul>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Положение о конфиденциальности</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                </ul>
+              </div>
+              <div class="footer__col">
+                <h3>КАТАЛОГ</h3>
+                <ul>
+                  <li><a href="#">Тренажёры</a></li>
+                  <li><a href="#">Гантели, штанги, гири</a></li>
+                  <li><a href="#">Все для футбола</a></li>
+                  <li><a href="#">Спортивный инвентарь</a></li>
+                  <li><a href="#">Теннис</a></li>
+                  <li><a href="#">Мотоциклы</a></li>
+                  <li><a href="#">Велосипеды</a></li>
+                  <li><a href="#">Фитнес аксессуары</a></li>
+                  <li><a href="#">Лыжный спорт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__info">
+              <ul class="footer__social">
+                <li>
+                  <a href="#"
+                    ><svg viewBox="0 0 576 512">
+                      <path
+                        d="M549.65 124.08a68.62 68.62 0 0 0-48.28-48.6C458.78 64 288 64 288 64S117.22 64 74.63 75.49a68.62 68.62 0 0 0-48.28 48.6c-11.42 42.86-11.42 132.3-11.42 132.3s0 89.44 11.42 132.3c6.28 23.65 24.78 41.5 48.28 47.82C117.22 448 288 448 288 448s170.78 0 213.37-11.49c23.5-6.32 42-24.17 48.28-47.82 11.42-42.86 11.42-132.3 11.42-132.3s0-89.44-11.42-132.3zM232.15 337.6V175.2l142.73 81.2-142.73 81.2z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg viewBox="0 0 512 512">
+                      <path
+                        d="M459.37 151.72c.33 4.54.33 9.1.33 13.64 0 138.72-105.59 298.56-298.56 298.56-59.45 0-114.68-17.22-161.14-47.1 8.45.97 16.57 1.3 25.34 1.3 49.05 0 94.21-16.58 130.27-44.84a105.12 105.12 0 0 1-98.1-72.77 132.7 132.7 0 0 0 19.81 1.62c9.42 0 18.84-1.3 27.61-3.57A104.95 104.95 0 0 1 20.8 195.57v-1.3a105.68 105.68 0 0 0 47.43 13.32 104.86 104.86 0 0 1-46.78-87.39c0-19.49 5.2-37.36 14.3-52.95a298.27 298.27 0 0 0 216.36 109.8c-1.62-7.8-2.6-15.91-2.6-24.03 0-57.83 46.78-104.94 104.94-104.94 30.2 0 57.5 12.67 76.67 33.14a206.6 206.6 0 0 0 66.6-25.34 104.65 104.65 0 0 1-46.14 57.83c21.12-2.28 41.59-8.13 60.43-16.25a225.57 225.57 0 0 1-52.63 54.26z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg viewBox="0 0 320 512">
+                      <path
+                        d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg viewBox="0 0 448 512">
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8a26.8 26.8 0 1 1 26.8-26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388a75.63 75.63 0 0 1-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9A75.63 75.63 0 0 1 49.4 388c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1A75.63 75.63 0 0 1 92 81.2c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9a75.63 75.63 0 0 1 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg viewBox="0 0 24 24">
+                      <path
+                        clip-rule="evenodd"
+                        d="M23.45 5.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V5.95c0-.66-.19-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.49.99-.89 0-3.05-3.21-4.34-6.89-.25-.71-.5-1-1.17-1H.9c-.75 0-.9.35-.9.73 0 .68.89 4.07 4.14 8.55C6.31 17.34 9.37 19 12.15 19c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C19.11 18.22 19.4 19 20.4 19h2.63c.75 0 1.13-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93z"
+                        fill-rule="evenodd"
+                      ></path></svg
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg viewBox="0 0 320 512">
+                      <path
+                        d="M275.1 334c-27.4 17.4-65.1 24.3-90 26.9l20.9 20.6 76.3 76.3c27.9 28.6-17.5 73.3-45.7 45.7-19.1-19.4-47.1-47.4-76.3-76.6L84 503.4c-28.2 27.5-73.6-17.6-45.4-45.7 19.4-19.4 47.1-47.4 76.3-76.3l20.6-20.6c-24.6-2.6-62.9-9.1-90.6-26.9-32.6-21-46.9-33.3-34.3-59 7.4-14.6 27.7-26.9 54.6-5.7 0 0 36.3 28.9 94.9 28.9s94.9-28.9 94.9-28.9c26.9-21.1 47.1-8.9 54.6 5.7 12.4 25.7-1.9 38-34.5 59.1zM30.3 129.7C30.3 58 88.6 0 160 0s129.7 58 129.7 129.7c0 71.4-58.3 129.4-129.7 129.4s-129.7-58-129.7-129.4zm66 0c0 35.1 28.6 63.7 63.7 63.7s63.7-28.6 63.7-63.7c0-35.4-28.6-64-63.7-64s-63.7 28.6-63.7 64z"
+                      ></path></svg
+                  ></a>
+                </li>
+              </ul>
+              <div class="footer__phone-wrap">
+                <div class="footer__phone-legend">Возникли вопросы? Звоните!</div>
+                <a class="footer__phone" href="tel:+71234567890">+7 (123) 456-78-90</a>
+              </div>
+              <div class="footer__schedule">
+                <h3 class="footer__schedule-title">ГРАФИК РАБОТЫ</h3>
+                <p>C 10:00 до 20:00 без выходных.</p>
+                <p>
+                  Оформление заявок происходит круглосуточно, их исполнение происходит согласно
+                  режиму работы компании.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">&#169; Copyright</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
