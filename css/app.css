@@ -1198,6 +1198,37 @@
   .product__button {
     width: 100%;
   }
+
+  .product__badges {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: grid;
+    gap: 5px;
+  }
+
+  .product__badge {
+    display: block;
+    color: #fff;
+    min-width: 100px;
+    line-height: 22px;
+    font-size: 9px;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .product__badge_discount {
+      background-color: #fb3543;
+    }
+
+  .product__badge_new {
+      background-color: #96d642;
+    }
+
+  .product__badge_popular {
+      background-color: #000000;
+    }
 .product-slider__head {
     display: flex;
     margin-bottom: 40px;
