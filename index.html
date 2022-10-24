@@ -305,6 +305,106 @@
             </div>
           </div>
         </div>
+        <div class="drawer">
+          <ul>
+            <li class="active">
+              <details>
+                <summary><a href="https://google.com">Каталог</a><span></span></summary>
+                <ul>
+                  <li class="active"><a href="#">Тренажеры</a></li>
+                  <li><a href="#">Гантели, штанги, гири</a></li>
+                  <li><a href="#">Велосипеды</a></li>
+                  <li><a href="#">Все для футбола</a></li>
+                  <li><a href="#">Коньки</a></li>
+                  <li><a href="#">Мотоциклы</a></li>
+                  <li><a href="#">Фитнес аксессуары</a></li>
+                  <li><a href="#">Теннис</a></li>
+                  <li><a href="#">Спортивный инвентарь</a></li>
+                  <li><a href="#">Плавание</a></li>
+                  <li><a href="#">Стойки, стеллажи</a></li>
+                  <li><a href="#">Лыжный спорт</a></li>
+                  <li><a href="#">Санки, снегокаты</a></li>
+                  <li><a href="#">Единоборства</a></li>
+                  <li><a href="#">Бадминтон</a></li>
+                  <li><a href="#">Скейтборды, самокаты</a></li>
+                  <li><a href="#">Скутеры, мопеды</a></li>
+                  <li><a href="#">Все для баскетбола</a></li>
+                  <li><a href="#">Снегоходы</a></li>
+                  <li><a href="#">Все для волейбола</a></li>
+                  <li><a href="#">Квадроциклы</a></li>
+                  <li><a href="#">Всё для хоккея</a></li>
+                  <li><a href="#">Сноубординг</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary><a href="https://google.com">Акции</a><span></span></summary>
+                <ul>
+                  <li><a href="#">Скидка спортсменам, тренерам и кмс</a></li>
+                  <li><a href="#">Акция при покупке тренажёра</a></li>
+                  <li><a href="#">Скидка на Adidas, Proxima, Royal</a></li>
+                  <li><a href="#">Скидка до 65% на инвентарь</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="drawer-backdrop"></div>
+        <dialog class="header__dialog">
+          <button type="button" class="close" onclick="this.closest('dialog').close()">
+            <svg viewBox="0 0 371.23 371.23">
+              <path
+                d="M371.23 21.21 350.02 0l-164.4 164.4L21.22 0 0 21.21l164.4 164.4L0 350.01l21.21 21.22 164.4-164.4 164.4 164.4 21.22-21.21-164.4-164.4z"
+              ></path>
+            </svg>
+          </button>
+          <div class="callback">
+            <h2 class="callback__title">Обратный звонок</h2>
+            <form action="#" class="callback__form">
+              <div class="callback__grid">
+                <label class="callback__field"
+                  ><span class="callback__legend">Имя:</span
+                  ><input class="input" type="text" type="text" name="name" required /></label
+                ><label class="callback__field"
+                  ><span class="callback__legend">Телефон:</span
+                  ><input
+                    class="input"
+                    type="text"
+                    type="tel"
+                    name="tel"
+                    required
+                    placeholder="+7 (___) ___ __ __"
+                /></label>
+              </div>
+              <div class="my-7">
+                <label class="checkbox" style=""
+                  ><input class="checkbox__input peer" type="checkbox" name="agreement" /><span
+                    class="checkbox__box"
+                    aria-hidden="true"
+                    ><svg width="11" height="10">
+                      <path
+                        d="m9.426 0-5.41 6.85-2.44-3.093L0 4.914 4.017 10 11 1.156"
+                        fill="#333"
+                      ></path></svg></span
+                  ><span class="checkbox__label"
+                    >Даю согласие на обработку персональных данных *</span
+                  ></label
+                >
+              </div>
+              <input
+                class="button px-8 button_primary button_md"
+                value="Перезвонить мне"
+                type="submit"
+              />
+            </form>
+          </div>
+        </dialog>
       </header>
       <main class="app__main">
         <div class="intro">
@@ -674,10 +774,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_discount">-10%</span
-                            ><span class="product__badge product__badge_new">Новинка</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-0-2-0-0-0"
@@ -685,6 +781,10 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_discount">-10%</span
+                            ><span class="product__badge product__badge_new">Новинка</span>
                           </div></a
                         >
                       </div>
@@ -732,9 +832,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_popular">Популярный</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-0-4-0-0-0"
@@ -742,6 +839,9 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_popular">Популярный</span>
                           </div></a
                         >
                       </div>
@@ -762,9 +862,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_new">Новинка</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-0-5-0-0-0"
@@ -772,6 +869,9 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_new">Новинка</span>
                           </div></a
                         >
                       </div>
@@ -842,10 +942,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_discount">-10%</span
-                            ><span class="product__badge product__badge_new">Новинка</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-1-2-0-0-0"
@@ -853,6 +949,10 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_discount">-10%</span
+                            ><span class="product__badge product__badge_new">Новинка</span>
                           </div></a
                         >
                       </div>
@@ -900,9 +1000,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_popular">Популярный</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-1-4-0-0-0"
@@ -910,6 +1007,9 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_popular">Популярный</span>
                           </div></a
                         >
                       </div>
@@ -930,9 +1030,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_new">Новинка</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-1-5-0-0-0"
@@ -940,6 +1037,9 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_new">Новинка</span>
                           </div></a
                         >
                       </div>
@@ -1010,10 +1110,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_discount">-10%</span
-                            ><span class="product__badge product__badge_new">Новинка</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-2-2-0-0-0"
@@ -1021,6 +1117,10 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_discount">-10%</span
+                            ><span class="product__badge product__badge_new">Новинка</span>
                           </div></a
                         >
                       </div>
@@ -1068,9 +1168,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_popular">Популярный</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-2-4-0-0-0"
@@ -1078,6 +1175,9 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_popular">Популярный</span>
                           </div></a
                         >
                       </div>
@@ -1098,9 +1198,6 @@
                               <del class="product__old-price">60 000 ₽</del>
                             </div>
                           </div>
-                          <div class="product__badges">
-                            <span class="product__badge product__badge_new">Новинка</span>
-                          </div>
                           <div class="product__actions">
                             <div
                               data-hk="0-0-0-0-1-2-0-0-5-2-5-0-0-0"
@@ -1108,6 +1205,9 @@
                             >
                               Подробнее
                             </div>
+                          </div>
+                          <div class="product__badges">
+                            <span class="product__badge product__badge_new">Новинка</span>
                           </div></a
                         >
                       </div>
@@ -1145,7 +1245,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container mb-[90px]">
           <div class="content">
             <h1>Шаблон интернет магазина спортинвентаря на modx</h1>
             <p>
