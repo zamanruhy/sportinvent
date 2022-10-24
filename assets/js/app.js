@@ -164,7 +164,35 @@ function script$3() {
           }
         }
       }
-    });
+    }, [(slider2) => {
+      let timeout;
+      let mouseOver = false;
+      function clearNextTimeout() {
+        clearTimeout(timeout);
+      }
+      function nextTimeout() {
+        clearTimeout(timeout);
+        if (mouseOver)
+          return;
+        timeout = setTimeout(() => {
+          slider2.next();
+        }, 4e3);
+      }
+      slider2.on("created", () => {
+        slider2.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+        });
+        slider2.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout();
+        });
+        nextTimeout();
+      });
+      slider2.on("dragStarted", clearNextTimeout);
+      slider2.on("animationEnded", nextTimeout);
+      slider2.on("updated", nextTimeout);
+    }]);
     prevEl.addEventListener("click", (e) => slider.prev());
     nextEl.addEventListener("click", (e) => slider.next());
   });
