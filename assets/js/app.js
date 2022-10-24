@@ -220,6 +220,7 @@ function script$2() {
 {
   script$2();
 }
+const Products = "";
 const Breadcrumb = "";
 const Amount = "";
 function script$1() {

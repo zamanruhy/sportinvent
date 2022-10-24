@@ -1795,6 +1795,7 @@ video {
 }
 
   .product:hover {
+    z-index: 100;
     box-shadow: 0 0 10px rgb(0 0 0 / 14%);
   }
 
@@ -1966,6 +1967,39 @@ video {
     overflow: visible !important;
     display: flex;
   }
+.products {
+  margin-bottom: 90px;
+}
+
+  .products__title {
+  }
+
+  .products__grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  @media not all and (min-width: 992px) {
+
+  .products__grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+    }
+
+  @media not all and (min-width: 768px) {
+
+  .products__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+    }
+
+  @media not all and (min-width: 576px) {
+
+  .products__grid {
+      grid-template-columns: minmax(0, 1fr)
+  }
+    }
 .breadcrumb {
   margin-top: 30px;
   margin-bottom: 40px;
