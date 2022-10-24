@@ -4,7 +4,7 @@ const common = "";
 const Footer = "";
 const Button = "";
 const Nav = "";
-function script$9() {
+function script$a() {
   const el = Array.from(document.querySelectorAll(".nav__sub"));
   if (!el)
     return;
@@ -20,10 +20,10 @@ function script$9() {
   });
 }
 {
-  script$9();
+  script$a();
 }
 const Hamburger = "";
-function script$8() {
+function script$9() {
   const el = document.querySelector(".hamburger");
   if (!el)
     return;
@@ -37,10 +37,10 @@ function script$8() {
   });
 }
 {
-  script$8();
+  script$9();
 }
 const Search = "";
-function script$7() {
+function script$8() {
   const el = document.querySelector(".search");
   if (!el)
     return;
@@ -59,10 +59,10 @@ function script$7() {
   });
 }
 {
-  script$7();
+  script$8();
 }
 const Drawer = "";
-function script$6() {
+function script$7() {
   const el = document.querySelector(".drawer");
   if (!el)
     return;
@@ -73,13 +73,13 @@ function script$6() {
   });
 }
 {
-  script$6();
+  script$7();
 }
 const Callback = "";
 const Checkbox = "";
 const Input = "";
 const Header = "";
-function script$5() {
+function script$6() {
   const el = document.querySelector(".header");
   if (!el)
     return;
@@ -96,6 +96,27 @@ function script$5() {
       dialogEl.showModal();
     });
   });
+}
+{
+  script$6();
+}
+const ToTop = "";
+function script$5() {
+  const el = document.querySelector(".to-top");
+  if (!el)
+    return;
+  function scrollToTop() {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 0) {
+      requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, Math.floor(currentScroll - currentScroll / 5));
+    }
+  }
+  function onScroll() {
+    el.classList.toggle("to-top_active", window.pageYOffset > 600);
+  }
+  window.addEventListener("scroll", onScroll);
+  el.addEventListener("click", scrollToTop);
 }
 {
   script$5();
