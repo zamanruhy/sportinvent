@@ -1951,20 +1951,29 @@ video {
   .product__badge_popular {
       background-color: #000000;
     }
-.product-slider__head {
+.product-slider {
+  position: relative;
+  z-index: 100;
+}
+
+  .product-slider__head {
     display: flex;
     margin-bottom: 40px;
     justify-content: flex-end;
   }
 
-    @media not all and (min-width: 768px) {.product-slider__head {
+  @media not all and (min-width: 768px) {
+
+  .product-slider__head {
       margin-bottom: 15px
   }
     }
+
   .product-slider__nav-wrap {
     display: flex;
     gap: 10px;
   }
+
   .product-slider__nav {
     display: flex;
     align-items: center;
@@ -1979,27 +1988,34 @@ video {
     color: #f05a23;
     border: none;
   }
+
   .product-slider__nav svg {
       height: 22px;
       fill: currentColor;
     }
+
   .product-slider__nav:hover {
       box-shadow: 0 0 5px rgb(0 0 0 / 30%);
     }
+
   .product-slider__content {
     margin: -10px -10px -69px;
     /* overflow: hidden; */
   }
+
   .product-slider__slider {
   }
+
   .product-slider .keen-slider__slide {
     padding: 10px 10px 69px;
   }
+
   .product-slider .keen-slider {
     /* padding: 10px 10px 69px;
     width: calc(100% - 20px);
     overflow: visible !important; */
   }
+
   .product-slider .keen-slider__slide {
     overflow: visible !important;
     display: flex;
