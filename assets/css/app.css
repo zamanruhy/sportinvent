@@ -1377,10 +1377,12 @@ video {
   }
 
   .header__dialog::-webkit-backdrop {
+      pointer-events: none;
       background-color: rgba(0, 0, 0, 0.8);
     }
 
   .header__dialog::backdrop {
+      pointer-events: none;
       background-color: rgba(0, 0, 0, 0.8);
     }
 

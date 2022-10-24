@@ -94,7 +94,18 @@ function script$6() {
     btnEl.addEventListener("click", (e) => {
       e.preventDefault();
       dialogEl.showModal();
+      requestAnimationFrame(() => {
+        window.addEventListener("click", outsideClick);
+      });
     });
+  });
+  function outsideClick(e) {
+    if (!dialogEl.contains(e.target)) {
+      dialogEl.close();
+    }
+  }
+  dialogEl.addEventListener("close", (e) => {
+    window.removeEventListener("click", outsideClick);
   });
 }
 {
