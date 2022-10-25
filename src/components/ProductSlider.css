@@ -1,0 +1,59 @@
+.product-slider {
+  &__head {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: flex-end;
+
+    @screen max-md {
+      margin-bottom: 15px;
+    }
+  }
+  &__nav-wrap {
+    display: flex;
+    gap: 10px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+    cursor: pointer;
+    transition: all 200ms ease-out;
+    text-align: center;
+    background: #fff;
+    color: #f05a23;
+    border: none;
+    position: relative;
+    z-index: 100;
+
+    svg {
+      height: 22px;
+      fill: currentColor;
+    }
+
+    &:hover {
+      box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    }
+  }
+  &__content {
+    margin: -10px -10px -69px;
+    /* overflow: hidden; */
+  }
+  &__slider {
+  }
+
+  .keen-slider__slide {
+    padding: 10px 10px 69px;
+  }
+  .keen-slider {
+    /* padding: 10px 10px 69px;
+    width: calc(100% - 20px);
+    overflow: visible !important; */
+  }
+  .keen-slider__slide {
+    overflow: visible !important;
+    display: flex;
+  }
+}

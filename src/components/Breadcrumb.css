@@ -1,0 +1,30 @@
+.breadcrumb {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 13px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+  }
+  li {
+  }
+  a {
+    display: block;
+  }
+  li:not(:last-of-type) a {
+    color: #f05a23;
+    text-decoration: none;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      color: #000000;
+    }
+
+    &::after {
+      content: "»";
+      margin-left: 10px;
+    }
+  }
+}

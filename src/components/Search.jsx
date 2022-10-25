@@ -9,13 +9,16 @@ function script() {
 
   const closeEl = el.querySelector('.search__close')
 
+  function open() {
+    el.classList.add('search_open')
+  }
   function close() {
     el.classList.remove('search_open')
   }
 
   closeEl.addEventListener('click', close)
-
-  document.addEventListener('click', (e) => {
+  window.addEventListener('open-search', open)
+  window.addEventListener('click', (e) => {
     if (!el.contains(e.target)) close()
   })
 }

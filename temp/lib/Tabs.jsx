@@ -78,6 +78,8 @@ export function Tabs(props) {
 
   createEffect(on(activeTab, () => focusActiveTab(), { defer: true }))
 
+  // createEffect(() => console.log(activePanel()))
+
   function focusActiveTab() {
     // console.log(activeTab())
     // const activeTabEl = $activeTab.el

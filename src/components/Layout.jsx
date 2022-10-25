@@ -1,11 +1,15 @@
 import Footer from './Footer'
 import Header from './Header'
+import ToTop from './ToTop'
 
 export function Layout(props) {
   return (
     <>
       <Header />
-      <main class="app__main">{props.children}</main>
+      <main class="app__main">
+        {props.children}
+        <ToTop />
+      </main>
       <Footer />
     </>
   )

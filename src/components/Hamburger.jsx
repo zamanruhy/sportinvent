@@ -4,9 +4,14 @@ import './Hamburger.css'
 function script() {
   const el = document.querySelector('.hamburger')
   if (!el) return
+  let active = false
 
   el.addEventListener('click', (e) => {
-    el.classList.toggle('hamburger_active')
+    active = !active
+    el.classList.toggle('hamburger_active', active)
+    window.dispatchEvent(
+      new CustomEvent('hamburger:active', { detail: active })
+    )
   })
 }
 

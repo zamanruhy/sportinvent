@@ -1,0 +1,53 @@
+.populars {
+  margin-bottom: 90px;
+
+  &__title {
+  }
+  &__tabs {
+  }
+  &__tablist {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    row-gap: 2px;
+  }
+  &__tab {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 8px 20px;
+    height: 44px;
+    text-align: center;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    text-transform: uppercase;
+    border: 1px solid rgb(0 0 0 / 10%);
+    position: relative;
+
+    & + & {
+      margin-left: -1px;
+    }
+
+    &_selected {
+      color: #fff;
+      background-color: #f05a23 !important;
+      border-color: #f05a23;
+      z-index: 1;
+    }
+  }
+  &__tabpanel {
+    display: none;
+    margin-top: -74px;
+
+    @screen max-md {
+      margin-top: 0;
+    }
+
+    &_selected {
+      display: block;
+    }
+  }
+}

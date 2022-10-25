@@ -54,14 +54,16 @@ const items = [
 export default function Categories() {
   return (
     <div class="categories">
-      <h2 class="categories__title title">Категории магазина</h2>
-      <div class="categories__grid">
-        {items.map((item) => (
-          <a href="#" class="categories__item">
-            <img class="categories__item-img" src={item.src} alt="#" />
-            <h3 class="categories__item-title">{item.title}</h3>
-          </a>
-        ))}
+      <div class="container">
+        <h2 class="categories__title title">Категории магазина</h2>
+        <div class="categories__grid">
+          {items.map((item) => (
+            <a href="#" class="categories__item">
+              <img class="categories__item-img" src={item.src} alt="#" />
+              <h3 class="categories__item-title">{item.title}</h3>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   )

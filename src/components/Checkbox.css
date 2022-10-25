@@ -1,0 +1,25 @@
+.checkbox {
+  @apply relative isolate flex w-fit cursor-pointer select-none items-center;
+
+  &__input {
+    @apply sr-only;
+  }
+  &__box {
+    @apply relative flex h-[17px] w-[17px] shrink-0 items-center justify-center;
+    border: 1px solid #c1c1c1;
+
+    svg {
+      display: none;
+      margin-top: -1px;
+    }
+  }
+  &__input:checked ~ &__box {
+    svg {
+      display: block;
+    }
+  }
+  &__label {
+    @apply ml-2;
+    color: #838383;
+  }
+}

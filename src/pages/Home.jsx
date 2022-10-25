@@ -3,17 +3,21 @@ import Brands from '@/components/Brands'
 import Categories from '@/components/Categories'
 import Features from '@/components/Features'
 import Intro from '@/components/Intro'
+import Populars from '@/components/Populars'
+import Products from '@/components/Products'
 
 export default function Home() {
   return (
     <>
       <Intro />
-      <div class="container">
-        <Features />
-        <Categories />
-        <Banners />
-        <Brands />
-        <div className="content">
+      <Features />
+      <Categories />
+      <Banners />
+      <Products />
+      <Brands />
+      <Populars />
+      <div class="container mb-[90px]">
+        <div class="content">
           <h1>Шаблон интернет магазина спортинвентаря на modx</h1>
           <p>
             Таким образом сложившаяся структура организации обеспечивает

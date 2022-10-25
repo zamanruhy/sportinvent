@@ -12,7 +12,7 @@ export default function Footer() {
       <div class="container">
         <div class="footer__top">
           <div class="footer__cols">
-            <div className="footer__col">
+            <div class="footer__col">
               <h3>КОМПАНИЯ</h3>
               <ul>
                 <li>
@@ -44,7 +44,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="footer__col">
+            <div class="footer__col">
               <h3>КАТАЛОГ</h3>
               <ul>
                 <li>

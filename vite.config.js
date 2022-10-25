@@ -93,20 +93,22 @@ export default defineConfig({
       output: {
         // entryFileNames: 'js/app.js',
         entryFileNames({ name }) {
-          return name === 'index' ? 'js/app.js' : 'js/[name].js'
+          return name === 'index' ? 'assets/js/app.js' : 'assets/js/[name].js'
         },
-        chunkFileNames: 'js/[name].js',
+        chunkFileNames: 'assets/js/[name].js',
         // assetFileNames: `assets/[name].[ext]`,
         assetFileNames({ name }) {
           // console.log('===NAME===', name)
           if (name.match(/\.css$/)) {
-            return name === 'style.css' ? 'css/app.css' : 'css/[name].css'
+            return name === 'style.css'
+              ? 'assets/css/app.css'
+              : 'assets/css/[name].css'
           }
           if (name.match(/\.(png|jpe?g|gif|svg|webp|avif)$/)) {
-            return 'img/[name].[ext]'
+            return 'assets/img/[name].[ext]'
           }
           if (name.match(/\.(mp4|webm|ogg|mp3|wav|flac|aac)$/)) {
-            return 'media/[name].[ext]'
+            return 'assets/media/[name].[ext]'
           }
           return 'assets/[name].[ext]'
         }

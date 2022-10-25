@@ -1,0 +1,47 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  max-width: 1270px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.app {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow-x: hidden;
+
+  &__main {
+    flex-grow: 1;
+  }
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  position: relative;
+
+  @screen max-md {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a9a9a9;
+
+  h1,
+  h2,
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}

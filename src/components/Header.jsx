@@ -6,6 +6,9 @@ import BagIcon from '../icons/bag.svg?component'
 import PhoneIcon from '../icons/phone.svg?component'
 import Hamburger from './Hamburger'
 import Search from './Search'
+import Drawer from './Drawer'
+import Callback from './Callback'
+import CloseIcon from '../icons/close.svg?component'
 import './Header.css'
 
 function script() {
@@ -13,11 +16,35 @@ function script() {
   if (!el) return
 
   const searchButtonEl = el.querySelector('.header__search-button')
-  const searchEl = document.querySelector('.search')
 
   searchButtonEl.addEventListener('click', (e) => {
     e.stopPropagation()
-    searchEl.classList.add('search_open')
+    window.dispatchEvent(new CustomEvent('open-search'))
+  })
+
+  const cbButtonEls = Array.from(
+    el.querySelectorAll('.header__callback, .header__callback-mobile')
+  )
+  const dialogEl = el.querySelector('.header__dialog')
+
+  cbButtonEls.forEach((btnEl) => {
+    btnEl.addEventListener('click', (e) => {
+      e.preventDefault()
+      dialogEl.showModal()
+      requestAnimationFrame(() => {
+        window.addEventListener('click', outsideClick)
+      })
+    })
+  })
+
+  function outsideClick(e) {
+    if (!dialogEl.contains(e.target)) {
+      dialogEl.close()
+    }
+  }
+
+  dialogEl.addEventListener('close', (e) => {
+    window.removeEventListener('click', outsideClick)
   })
 }
 
@@ -53,7 +80,7 @@ export default function Header() {
                 info@sitename.ru
               </a>
             </div>
-            <a class="header__logo" href="/">
+            <a class="header__logo" href=".">
               <img
                 src="https://shop2full.demoultron.ru/images/site/logo.png"
                 alt="#"
@@ -86,29 +113,18 @@ export default function Header() {
         </div>
       </div>
 
-      {/* <app-hamburger></app-hamburger> */}
-      {/* <app-drawer class="hidden">
-        <app-button variant="primary" data-modal="main-modal">
-          Open Modal
-        </app-button>
-        <app-input
-          label="Name"
-          placeholder="Type your name"
-          name="name"
-          autofocus
-        ></app-input>
-        Lorem <br />
-        ipsum <br />
-        dolor <br />
-        sit <br />
-        amet, <br />
-        consectetur
-        <br />
-        adipisicing <br />
-        elit. <br />
-        Aperiam, <br />
-        eveniet!sss
-      </app-drawer> */}
+      <Drawer />
+
+      <dialog class="header__dialog">
+        <button
+          type="button"
+          class="close"
+          onclick="this.closest('dialog').close()"
+        >
+          <CloseIcon />
+        </button>
+        <Callback />
+      </dialog>
     </header>
   )
 }
